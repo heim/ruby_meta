@@ -1,5 +1,5 @@
 class Module
-  def include(*modules)
+  def included(*modules)
     modules.reverse_each do |mod|
       mod.append_self(self)
     end
