@@ -3,7 +3,6 @@ class Struct
   def self.inherited(klass)
     @children << klass
   end
-  
   def self.children
     @children
   end
